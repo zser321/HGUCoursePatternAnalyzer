@@ -24,6 +24,10 @@ public class HGUCoursePatternAnalyzer {
 	Student[] students;
 	Course[] courses;
 	
+	/**
+	 * This method runs our analysis logic to get the list of student and course names from lines.
+	 * @param args
+	 */
 	public void run(String[] args) {
 		
 		numOfStudents = Integer.parseInt(args[0]);
@@ -44,6 +48,11 @@ public class HGUCoursePatternAnalyzer {
 		
 	}
 
+	/**
+	 * This method returns a Student array to initiate the field, students, from lines.
+	 * @param lines
+	 * @return
+	 */
 	private Student[] initiateStudentArrayFromLines(String[] lines) {
 		
 		// TODO: implement this method
@@ -52,6 +61,12 @@ public class HGUCoursePatternAnalyzer {
 		return null;
 	}
 
+	/**
+	 * This method check if there is the same name of the second arugement in the array, students
+	 * @param students
+	 * @param student
+	 * @return boolean
+	 */
 	private boolean studentExist(Student[] students, Student student) {
 		
 		// TODO: implement this method
@@ -59,6 +74,11 @@ public class HGUCoursePatternAnalyzer {
 		return false;
 	}
 	
+	/**
+	 * This method returns a Course array to initiate the field, courses, from lines.
+	 * @param lines
+	 * @return
+	 */
 	private Course[] initiateCourseArrayFromLines(String[] lines) {
 		
 		// TODO: implement this method
@@ -66,6 +86,12 @@ public class HGUCoursePatternAnalyzer {
 		return null;
 	}
 
+	/**
+	 * This method check if there is the same name of the second argument in the array, courses.
+	 * @param courses
+	 * @param course
+	 * @return boolean
+	 */
 	private boolean courseExist(Course[] courses, Course course) {
 		
 		// TODO: implement this method
